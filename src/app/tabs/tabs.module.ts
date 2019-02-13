@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs.router.module';
 
 import { TabsPage } from './tabs.page';
+import { ActionSheet } from '@ionic-native/action-sheet/ngx';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { TabsPage } from './tabs.page';
     FormsModule,
     TabsPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage],
+  providers: [ActionSheet]
 })
 export class TabsPageModule {}

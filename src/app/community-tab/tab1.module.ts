@@ -7,6 +7,7 @@ import { Tab1Page } from './tab1.page';
 import { PostAddComponent } from './post-add/post-add.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostComponent } from './post/post.component';
+import { PhotoUploaderComponent } from './photo-uploader/photo-uploader.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { PostComponent } from './post/post.component';
     FormsModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
-  declarations: [Tab1Page, PostAddComponent, PostListComponent, PostComponent],
+  declarations: [Tab1Page, PostAddComponent, PostListComponent, PostComponent, PhotoUploaderComponent],
   entryComponents: [PostAddComponent]
 })
 export class Tab1PageModule {}
