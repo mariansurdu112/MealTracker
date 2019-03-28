@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Meal View</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<app-category-meal *ngFor="let cat of categories" [category]="cat"></app-category-meal>
+</ion-content>

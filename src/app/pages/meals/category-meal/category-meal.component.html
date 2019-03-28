@@ -1,0 +1,28 @@
+<ion-card (click)="toogle=!toogle">
+  <ion-item>
+    <ion-label>{{category}}</ion-label>
+  </ion-item>
+  <img *ngIf="toogle" src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/howcuttingdo.jpg" />
+  <ion-card-content *ngIf="toogle">
+    <ion-list>
+      <ion-item>
+        <ion-label>Big Mac</ion-label>
+        <span class="quantity">200g</span>
+      </ion-item>
+      <ion-item>
+        <ion-label>Chefir</ion-label>
+        <span class="quantity">200ml</span>
+      </ion-item>
+      <ion-item>
+        <ion-label>Friptura de porc</ion-label>
+        <span class="quantity">500g</span>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label>Calories</ion-label>
+        <span class="quantity validCalories">1000</span>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
