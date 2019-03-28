@@ -8,6 +8,7 @@ import { MealComponent } from './meal/meal.component';
 import { MealAddComponent } from './meal-add/meal-add.component';
 import { MealViewComponent } from './meal-view/meal-view.component';
 import { CategoryMealComponent } from './category-meal/category-meal.component';
+import { CategoryMealAddComponent } from './category-meal-add/category-meal-add.component';
 
 const routes: Routes = [
   {
@@ -25,7 +26,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [MealsComponent, MealComponent, MealAddComponent, MealViewComponent, CategoryMealComponent],
+  declarations: [MealsComponent, MealComponent, MealAddComponent, MealViewComponent, CategoryMealComponent, CategoryMealAddComponent],
   imports: [
     CommonModule,
     FormsModule,

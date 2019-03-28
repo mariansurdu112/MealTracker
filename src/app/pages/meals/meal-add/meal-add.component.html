@@ -7,6 +7,5 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
-  <ion-button expand="block" (click)="closeModal()">Save</ion-button>
+ <app-category-meal-add *ngFor="let cat of categories" [category]="cat"></app-category-meal-add>
 </ion-content>

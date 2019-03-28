@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meal-add.component.scss']
 })
 export class MealAddComponent implements OnInit {
-
+categories = ['Breakfast', 'Lunch', 'Dinner', 'Other'];
   constructor(public modalController:ModalController) { }
 
   ngOnInit() {
