@@ -1,3 +1,6 @@
+import { Camera } from '@ionic-native/camera/ngx';
+import { PhotoLibrary } from '@ionic-native/photo-library/ngx';
+import { ActionSheet } from '@ionic-native/action-sheet/ngx';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MealsComponent } from './meals.component';
@@ -9,6 +12,7 @@ import { MealAddComponent } from './meal-add/meal-add.component';
 import { MealViewComponent } from './meal-view/meal-view.component';
 import { CategoryMealComponent } from './category-meal/category-meal.component';
 import { CategoryMealAddComponent } from './category-meal-add/category-meal-add.component';
+import { ImagePicker } from '@ionic-native/image-picker/ngx';
 
 const routes: Routes = [
   {
@@ -32,6 +36,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  providers: [ActionSheet, PhotoLibrary, Camera, ImagePicker]
 })
 export class MealsModule { }
